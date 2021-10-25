@@ -24,6 +24,10 @@ for (let i = 0; i < bike.length; i++) {
     // console.log(parseInt(bike[i].peso));
     weight.push(peso);
     // console.log(weight);
+    let minWeight = Math.min(...weight);
+    if (minWeight == peso) {
+        document.querySelector("h1").innerHTML = `La Bicicletta più leggera è ${(bike[i].nome)}`;
+    }
 }
 
 
@@ -33,4 +37,4 @@ let minWeight = Math.min(...weight);
 console.log(Math.min(...weight));
 // console.log(Math.min(parseInt(...peso)));
 
-document.querySelector("h1").innerHTML = Math.min(...weight);
+// document.querySelector("h1").innerHTML = Math.min(...weight);

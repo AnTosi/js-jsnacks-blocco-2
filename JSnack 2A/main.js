@@ -37,3 +37,4 @@ for (let i = 0; i < teams.length; i++) {
     console.log(team);
     
 }
+

@@ -25,5 +25,6 @@ bikes.forEach(element => {
     if (element.peso<weight) {
         weight = element.peso;
         console.log(element.nome);
+        document.querySelector("h1").innerHTML = `La bici più leggera è ${element.nome}`
     }
 });

@@ -6,11 +6,14 @@
 */ 
 
 let numberArray = [];
-sum = 0;
 let element = prompt("Inserisci un numero")
+sum = [element];
 
 while (sum < 50) {
-    sum += element;
-    element = prompt("Inserisci un numero")
-    numberArray.push(element)
-};
+    
+    if (sum < 50) {
+        element = prompt("Inserisci un numero");
+        numberArray.push(element);
+        sum = parseInt(sum) + parseInt(element);
+        console.log(sum);
+}};

@@ -21,10 +21,10 @@ const bikes = [
 
 weight = 100;
 
-bikes.forEach(element => {
-    if (element.peso<weight) {
-        weight = element.peso;
-        console.log(element.nome);
-        document.querySelector("h1").innerHTML = `La bici più leggera è ${element.nome}`
+bikes.forEach(bike => {
+    if (bike.peso<weight) {
+        weight = bike.peso;
+        console.log(bike.nome);
+        document.querySelector("h1").innerHTML = `La bici più leggera è ${bike.nome}`
     }
 });
